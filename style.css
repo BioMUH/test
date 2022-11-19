@@ -1,0 +1,70 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 200vh;
+
+}
+nav{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    background-color: rgb(10, 10, 10);
+}
+.navBar img{
+    background-color: transparent;
+    height: 10vh;
+    width: 40px;
+    align-self: stretch;
+    margin-left: -22%;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.logo{
+    height: 10vh;
+    width: 7.5%;
+    align-self: stretch;
+    
+}
+
+.navBar{
+    width: 50%;
+    align-self: stretch;
+   /* background: chartreuse;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navBar div{
+    font-weight: 700;
+    color: yellow;
+    margin-left: 5px;
+}   
+img{
+
+    width: 10vh;
+    height: 100%;
+}
+
+@keyframes rotation{
+ 0%{
+    transform: rotate(0deg);
+ }
+ 100%{
+    transform: rotate(360deg);
+ }
+
+}
